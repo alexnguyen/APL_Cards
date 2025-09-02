@@ -6,126 +6,6 @@
     <title>Austin Public Library - Library Card Application</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* .library-header {
-            background-color: #2c5530;
-            color: white;
-            padding: 8px 16px;
-            font-weight: 500;
-            font-size: 14px;
-        } */
-        
-        /* .library-header::before {
-            content: "✓";
-            color: #90ee90;
-            margin-right: 8px;
-            font-weight: bold;
-        } */
-        
-        /* .form-container {
-            max-width: 400px;
-            margin: 0 auto;
-            background: white;
-            border: 1px solid #ddd;
-        } */
-        
-        /* .form-content {
-            padding: 20px;
-        } */
-        
-        /* .form-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        } */
-        
-        /* .form-subtitle {
-            font-size: 14px;
-            margin-bottom: 20px;
-            color: #666;
-        } */
-        
-        /* .form-check {
-            margin-bottom: 15px;
-        } */
-        
-        .form-check-input:checked {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-        
-        .form-check-label {
-            font-size: 14px;
-            color: #333;
-        }
-        
-        .form-label {
-            font-size: 14px;
-            font-weight: 500;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        
-        .form-control {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 8px 12px;
-            font-size: 14px;
-        }
-        
-        .forgot-password {
-            font-size: 12px;
-            color: #007bff;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 5px;
-        }
-        
-        .forgot-password:hover {
-            text-decoration: underline;
-            color: #0056b3;
-        }
-        
-        .btn-continue {
-            background-color: #1e5f99;
-            border-color: #1e5f99;
-            color: white;
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            border-radius: 4px;
-            margin-bottom: 15px;
-        }
-        
-        .btn-continue:hover {
-            background-color: #174a7a;
-            border-color: #174a7a;
-            color: white;
-        }
-        
-        .btn-cancel {
-            background-color: transparent;
-            border: 1px solid #dc3545;
-            color: #dc3545;
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            border-radius: 4px;
-        }
-        
-        .btn-cancel:hover {
-            background-color: #dc3545;
-            color: white;
-        }
-        
-        .btn-cancel::before {
-            content: "×";
-            margin-right: 5px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body style="background-color: #f5f5f5;">
     <div class="container-fluid p-0">
@@ -147,17 +27,18 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply">
                         <label class="form-check-label" for="applyNew">
-                            I need to APPLY for a new library card
+                            I need to <span class="form-check-label-bolded">APPLY</span> for a new library card
                         </label>
                     </div>
                     
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
                         <label class="form-check-label" for="renewCard">
-                            I need to RENEW my library card
+                            I need to <span class="form-check-label-bolded">RENEW</span> my library card
                         </label>
                     </div>
                     
+                    <br>
                     <!-- Library Card Number -->
                     <div class="mb-3">
                         <label for="libraryCardNumber" class="form-label">Library Card Number</label>
@@ -168,12 +49,12 @@
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" name="password">
-                        <a href="#" class="forgot-password">🔒 forgot my password</a>
+                        <a href="#" class="forgot-password">I forgot my password</a>
                     </div>
                     
                     <!-- Buttons -->
-                    <button type="submit" class="btn btn-continue">Continue</button>
-                    <button type="button" class="btn btn-cancel">Cancel</button>
+                    <button type="submit" class="btn btn-continue"><span class="btn-continue-text">Continue</span></button>
+                    <button type="button" class="btn btn-cancel"><span class="btn-cancel-text">Cancel</span></button>
                 </form>
             </div>
         </div>
