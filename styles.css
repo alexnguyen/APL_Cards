@@ -94,6 +94,20 @@
     stroke-width: 1px;
     stroke: #1b1b1b;
     height: 40px;
+    width:355px;
+}
+
+.form-control-disabled {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #1b1b1b;
+    height: 40px;
+    width: 355px;
+    background-color: #C9C9C9;
 }
 
 .forgot-password {
