@@ -272,3 +272,28 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.form-comment {
+    color: #71767A;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 150%;
+    /* 21px */
+}
+
+.form-comment-link {
+    color: #005EA2;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
