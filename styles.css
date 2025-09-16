@@ -297,3 +297,47 @@
     text-underline-offset: auto;
     text-underline-position: from-font;
 }
+
+.sub-header {
+    color: #1B1B1B;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.user-agreement {
+    color: #1B1B1B;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 5px;
+}
+
+.gray-border-box {
+    border-radius: 2px;
+    background: #E2E2E2;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.checkbox-text {
+    color: #1B1B1B;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+display: inline-block;
+}
