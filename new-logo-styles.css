@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.library-banner {
+    display: flex;
+    padding: 24px 64px 24px 65px;
+    height: 113px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom: 8px solid #44499C;
+    background: #FFF;
+}
+
+.libary-logo {
+    width: 246px;
+    height: 113px;
+    flex-shrink: 0;
+    aspect-ratio: 246/113;
+}
+
+.library-banner-text {
+    color: white;
+}
+
+.form-content {
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.form-title {
+    color: #000;
+    margin-bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44.8px;
+    letter-spacing: 0;
+}
+
+.comment {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.comment-link {
+    color: #44499C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.forgot-password {
+    color: #005ea2;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.btn-continue {
+    display: flex;
+    height: 44px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: #C6C5C4;
+    border-color: #C6C5C4;
+    color: #000000;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.btn-continue:hover {
+    background-color: #174a7a;
+    border-color: #174a7a;
+    color: white;
+}
+
+.btn-continue-text {
+    color: #000000;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: flex;
+    height: 44px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.btn-cancel-text {
+    color: #b50909;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-cancel:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancel::before {
+    content: "×";
+    margin-right: 5px;
+    color: #b50909;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

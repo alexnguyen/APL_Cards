@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Public Library - Library Card Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="new-logo-styles.css">
+</head>
+<body style="background-color: #f5f5f5;">
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <div class="library-banner">
+                <img src="new_library_logo.png" class="libary-logo" alt="libary logo">
+            </div>
+        <div class="form-container">          
+            <!-- Form Content -->
+            <div class="form-content">
+                <h2 class="form-title">Library Card Application</h2>
+                <p class="comment">Unsure if you live within Austin’s city limits? Call any <span class="comment-link">APL branch</span> or <span class="comment-link">Customer Service.</span>
+                    <br>
+                    <br>
+                    Check the <span class="comment-link">Library Card Policy page</span> for details on how Library Cards work.</p>
+                <form>
+                    
+                    <!-- Library Card Number -->
+                    <div class="mb-3">
+                        <label for="libraryCardNumber" class="form-label">Library Card Number</label>
+                        <input type="text" class="form-control" id="libraryCardNumber" name="libraryCardNumber">
+                    </div>
+                    
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                        <a href="#" class="forgot-password">I forgot my password</a>
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <button type="submit" class="btn btn-continue"><span class="btn-continue-text">Continue</span></button>
+                    <button type="button" class="btn btn-cancel"><span class="btn-cancel-text">Cancel</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
