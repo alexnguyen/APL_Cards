@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Public Library - Library Card Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="new-logo-styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <div class="library-banner">
+                <img src="new_library_logo.png" class="libary-logo" alt="libary logo">
+            </div>
+        <div class="form-container">          
+            <!-- Form Content -->
+            <div class="form-content">
+                <h2 class="form-title">Library Card Application</h2>
+                <p class="comment">Unsure if you live within Austin’s city limits? Call any <span class="comment-link">APL branch</span> or <span class="comment-link">Customer Service.</span>
+                    <br>
+                    <br>
+                    Check the <span class="comment-link">Library Card Policy page</span> for details on how Library Cards work.</p>
+                <form>
+                    
+                    <p class="form-subtitle">I need to...</p>
+                    <!-- Radio Buttons -->
+                    <div class="radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply">
+                        <label class="form-check-label" for="renewCard">
+                            <span class="form-check-label-bolded">SIGN-UP</span> for a new library card
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
+                        <label class="form-check-label" for="renewCard">
+                            <span class="form-check-label-bolded">RENEW</span> my library card
+                        </label>
+                    </div>
+                    </div>
+
+                    <p class="form-subtitle">Who is this card for?</p>
+                    <div class="radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply">
+                        <label class="form-check-label" for="renewCard">
+                            An adult (18 or older)
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
+                        <label class="form-check-label" for="renewCard">
+                            A child (17 or younger)
+                            <br>
+                            <span class="form-check-label-comment">Residents and non-residents aged 17 and younger require an adult parent or guardian as a cosigner.</span>
+                        </label>
+                    </div>
+                    </div>
+
+                    <p class="form-subtitle">What type of card would you like?
+                        <br>
+                        <span class="form-subtitle-comment">Card type benefits</span>
+                    </p>
+                    <div class="radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply">
+                        <label class="form-check-label" for="renewCard">
+                            Library Card
+                            <br>
+                            <span class="form-check-label-comment">Applicants MUST visit a Austin Public Library location with identifying documents to obtain a library card.</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
+                        <label class="form-check-label" for="renewCard">
+                            Digital Card
+                            <br>
+                            <span class="form-check-label-comment">Provides you 24/7 access ONLY to Digital Library Resources. In order to receive your new Digital Card, you must upload your photo ID and proof of residence address. Currently only available for adults 18 and older</span>
+                        </label>
+                    </div>
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <button type="submit" class="btn btn-continue"><span class="btn-continue-text">Continue</span></button>
+                    <button type="button" class="btn btn-cancel"><span class="btn-cancel-text">Cancel</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

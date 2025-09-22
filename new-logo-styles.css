@@ -56,6 +56,30 @@ body {
     letter-spacing: 0;
 }
 
+.form-subtitle {
+    color: #000;
+    font-family: 'Geist', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.form-subtitle-comment {
+    color: #005EA2;
+    font-family: 'Geist', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
 .comment {
     color: #1B1B1B;
     font-family: 'Geist', sans-serif;
@@ -189,4 +213,39 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.radio-buttons-div {
+    margin-bottom: 15px;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+.form-check-input:checked {
+    background-color: #44499C;
+    border-color: #44499C;
+}
+
+.form-check-label {
+    color: #1B1B1B;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.form-check-label-bolded {
+    font-weight: 600;
+}
+
+.form-check-label-comment {
+    color: #1B1B1B;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
 }
