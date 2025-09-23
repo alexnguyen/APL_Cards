@@ -70,7 +70,7 @@
                         <label class="form-check-label" for="renewCard">
                             Library Card
                             <br>
-                            <span class="form-check-label-comment">Applicants MUST visit a Austin Public Library location with identifying documents to obtain a library card.</span>
+                            <span class="form-check-label-comment">Applicants <span class="form-check-label-comment-bolded">MUST</span> visit a Austin Public Library location with <span class="form-check-label-comment-link">identifying documents</span> to obtain a library card.</span>
                         </label>
                     </div>
                     
@@ -79,9 +79,135 @@
                         <label class="form-check-label" for="renewCard">
                             Digital Card
                             <br>
-                            <span class="form-check-label-comment">Provides you 24/7 access ONLY to Digital Library Resources. In order to receive your new Digital Card, you must upload your photo ID and proof of residence address. Currently only available for adults 18 and older</span>
+                            <span class="form-check-label-comment">Provides you 24/7 access <span class="form-check-label-comment-bolded">ONLY</span> to <span class="form-check-label-comment-link">Digital Library Resources.</span> <span class="form-check-label-comment-darker">In order to receive your new Digital Card, you must upload your photo ID and proof of residence address. Currently only available for adults 18 and older</span></span>
                         </label>
                     </div>
+
+                    <p class="form-subtitle">Tell us a little about yourself
+                    <br>
+                    
+                    <!-- First Name -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+
+                    <!-- Preferred First Name -->
+                    <div class="mb-3">
+                        <label for="preferredFirstName" class="form-label">Preferred First Name (optional)</label>
+                        <input type="text" class="form-control" id="preferredFirstName" name="preferredFirstName">
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div class="mb-3">
+                        <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                        <br>
+                        <input type="date" class="form-control-half-width" id="dateOfBirth" name="dateOfBirth" readonly>
+                    </div>
+
+                    <p class="form-subtitle">Which ethnicity/race do you  most identify with? (optional)</p>
+                    <p class="comment">Choose all that apply</p>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Asian</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Black</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Hawaiian/Pacific Islander</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Hispanic/Latino</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Native American/Alaskan Native</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">White</label>
+                    <br>
+
+                    <p class="form-subtitle">How can we contact you?
+                    <br>
+
+                    <!-- Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Email Address</label>
+                        <input type="text" class="form-control" id="emailAddress" name="emailAddress">
+                    </div>
+
+                    <!-- Confirm Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Confirm Email Address</label>
+                        <input type="text" class="form-control" id="confirmEmailAddress" name="confirmEmailAddress">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number (optional)</label>
+                        <br>
+                        <input type="text" class="form-control-half-width" id="phoneNumber" name="phoneNumber">
+                    </div>
+
+                    <!-- Street Address -->
+                    <div class="mb-3">
+                        <label for="streetAddress" class="form-label">Street Address</label>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress">
+                    </div>
+
+                    <!-- Unit Number -->
+                    <div class="mb-3">
+                        <label for="unitNumber" class="form-label">Unit Number (optional)</label>
+                        <input type="text" class="form-control" id="unitNumber" name="unitNumber">
+                    </div>
+
+                    <!-- Address Fields -->
+                    <div class="mb-3">
+                        <div class="grid-form">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                        </div>
+                        <div class="grid-item">
+                        <label for="zipCode"class="form-label" >Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="zipCode">
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Radio Buttons -->
+                    <p class="form-subtitle">Is your current residence the same as your mailing address?</p>
+                    <div class="radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currentResidenceSameAsMailing" id="yes" value="yes">
+                        <label class="form-check-label" for="yes">
+                            Yes
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currentResidenceSameAsMailing" id="no" value="no" checked>
+                        <label class="form-check-label" for="no">
+                            No
+                        </label>
+                    </div>
+
+                    <p class="form-subtitle">In order to renew your new Library Card, you must upload a copy of ID and proof of residence or present your photo ID and proof of residence address to any <span class="form-subtitle-link">Austin Public Library location</span>. </p>
+                    
+                    <h2 class="sub-header">Acceptable forms of ID and proof of residence documents</h2>
+
+                    <br>
+                    <p class="form-subtitle">User Agreement </p>
+                    
                     </div>
                     
                     <!-- Buttons -->

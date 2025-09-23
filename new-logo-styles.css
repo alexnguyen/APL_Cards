@@ -65,6 +65,21 @@ body {
     line-height: 23px;
 }
 
+.form-subtitle-link {
+    color: #005EA2;
+    font-family: 'Geist', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
 .form-subtitle-comment {
     color: #005EA2;
     font-family: 'Geist', sans-serif;
@@ -248,4 +263,100 @@ body {
     font-style: italic;
     font-weight: 400;
     line-height: 150%;
+}
+
+.form-check-label-comment-darker {
+    color: #71767A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.form-check-label-comment-bolded {
+    color: #71767A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.form-check-label-comment-link {
+    color: #005EA2;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #1b1b1b;
+    height: 40px;
+    width: 380px;
+}
+
+.form-control-half-width {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #1b1b1b;
+    height: 40px;
+    width: 190px;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* Two equal columns */
+    gap: 15px;
+    /* Space between grid items */
+}
+
+.grid-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.grid-item input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sub-header {
+    color: #1B1B1B;
+    font-family: 'Geist', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.checkbox-text {
+    color: #1B1B1B;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
 }
