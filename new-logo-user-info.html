@@ -17,10 +17,10 @@
             <!-- Form Content -->
             <div class="form-content">
                 <h2 class="form-title">Library Card Application</h2>
-                <p class="comment">Unsure if you live within Austin’s city limits? Call any <span class="comment-link">APL branch</span> or <span class="comment-link">Customer Service.</span>
+                <p class="comment">Unsure if you live within Austin’s city limits? Call any Customer Service at <span class="comment-link">512-974-7475</span>.
                     <br>
                     <br>
-                    Check the <span class="comment-link">Library Card Policy page</span> for details on how Library Cards work.</p>
+                    For more information on how library cards work, visit the <span class="comment-link">Library Card Policy page</span> </p>
                 <form>
                     
                     <p class="form-subtitle">I need to...</p>
@@ -100,7 +100,7 @@
 
                     <!-- Preferred First Name -->
                     <div class="mb-3">
-                        <label for="preferredFirstName" class="form-label">Preferred First Name (optional)</label>
+                        <label for="preferredFirstName" class="form-label">Preferred First Name <span class="form-label-comment">(optional)</span></label>
                         <input type="text" class="form-control" id="preferredFirstName" name="preferredFirstName">
                     </div>
 
@@ -111,8 +111,8 @@
                         <input type="date" class="form-control-half-width" id="dateOfBirth" name="dateOfBirth" readonly>
                     </div>
 
-                    <p class="form-subtitle">Which ethnicity/race do you  most identify with? (optional)</p>
-                    <p class="comment">Choose all that apply</p>
+                    <p class="form-subtitle">Which ethnicity/race do you  most identify with? <span class="form-label-comment">(optional)</span></p>
+                    <p class="ethnicity-comment">Choose all that apply</p>
                     <input type="checkbox" id="myCheckbox" name="option1" value="value1">
                     <label for="myCheckbox" class="checkbox-text">Asian</label>
                     <br>
@@ -149,7 +149,7 @@
 
                     <!-- Phone Number -->
                     <div class="mb-3">
-                        <label for="phoneNumber" class="form-label">Phone Number (optional)</label>
+                        <label for="phoneNumber" class="form-label">Phone Number <span class="form-label-comment">(optional)</span></label>
                         <br>
                         <input type="text" class="form-control-half-width" id="phoneNumber" name="phoneNumber">
                     </div>
@@ -162,7 +162,7 @@
 
                     <!-- Unit Number -->
                     <div class="mb-3">
-                        <label for="unitNumber" class="form-label">Unit Number (optional)</label>
+                        <label for="unitNumber" class="form-label">Unit Number <span class="form-label-comment">(optional)</span></label>
                         <input type="text" class="form-control" id="unitNumber" name="unitNumber">
                     </div>
 
@@ -185,7 +185,7 @@
                     </div>
 
                     <!-- Radio Buttons -->
-                    <p class="form-subtitle">Is your current residence the same as your mailing address?</p>
+                    <p class="form-subtitle">Is your current mailing address the same as your residence address?</p>
                     <div class="radio-buttons-div">
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="currentResidenceSameAsMailing" id="yes" value="yes">
@@ -201,9 +201,9 @@
                         </label>
                     </div>
 
-                    <p class="form-subtitle">In order to renew your new Library Card, you must upload a copy of ID and proof of residence or present your photo ID and proof of residence address to any <span class="form-subtitle-link">Austin Public Library location</span>. </p>
-                    
+                    <p class="form-subtitle">In order to receive your new Library Card, you must present your photo ID and proof of residence address to any<span class="form-subtitle-link">Austin Public Library location</span>. </p>
                     <h2 class="sub-header">Acceptable forms of ID and proof of residence documents</h2>
+                    <br>
                     <p class="form-subtitle">What kind of ID do you have?</p>
                     <!-- ID fields -->
                     <div class="mb-3">
@@ -228,6 +228,7 @@
                     <!-- Password -->
                     <div class="mb-3">
                         <label for="password" class="form-label">Create a Library Card Password</label>
+                        <p class="password-comment">Some digital resources call your password a PIN.</p>
                         <input type="text" class="form-control-password" id="password" name="password">
                     </div>
 

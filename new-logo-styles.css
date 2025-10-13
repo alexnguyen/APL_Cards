@@ -104,6 +104,16 @@ body {
     line-height: 120%;
 }
 
+.ethnicity-comment {
+    color: #4F6169;
+    font-family: 'Geist', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 20px;
+}
+
 .comment-link {
     color: #005EA2;
     font-family: 'Geist', sans-serif;
@@ -125,6 +135,15 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    line-height: 150%;
+}
+
+.form-label-comment {
+    color: #8A8787;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
     line-height: 150%;
 }
 
@@ -320,7 +339,7 @@ body {
     stroke: #1b1b1b;
     height: 40px;
     width: 395px;
-    background: url(ci_hide.svg) no-repeat scroll 350px 7px;
+    background: url(ci_hide.svg) no-repeat scroll 360px 7px;
 }
 
 .form-control-half-width {
@@ -333,6 +352,15 @@ body {
     stroke: #1b1b1b;
     height: 40px;
     width: 190px;
+}
+
+.password-comment {
+    color: #1B1B1B;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .grid-form {
@@ -394,7 +422,7 @@ body {
 
 .gray-border-box {
     border-radius: 2px;
-    background: #E2E2E2;
+    background: #C6C5C4;
     display: flex;
     padding: 16px;
     justify-content: center;
@@ -420,5 +448,6 @@ body {
 }
 
 .checkbox-container input[type="checkbox"] {
-  margin-right: 4px; /* Adds spacing between checkbox and text */
+    margin-right: 4px;
+    /* Adds spacing between checkbox and text */
 }
