@@ -307,7 +307,20 @@ body {
     stroke-width: 1px;
     stroke: #1b1b1b;
     height: 40px;
-    width: 380px;
+    width: 395px;
+}
+
+.form-control-password {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #1b1b1b;
+    height: 40px;
+    width: 395px;
+    background: url(ci_hide.svg) no-repeat scroll 350px 7px;
 }
 
 .form-control-half-width {
@@ -325,6 +338,14 @@ body {
 .grid-form {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    /* Two equal columns */
+    gap: 15px;
+    /* Space between grid items */
+}
+
+.grid-form-half {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     /* Two equal columns */
     gap: 15px;
     /* Space between grid items */
@@ -359,4 +380,45 @@ body {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 15px;
+}
+
+.user-agreement {
+    color: #1B1B1B;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 5px;
+}
+
+.gray-border-box {
+    border-radius: 2px;
+    background: #E2E2E2;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.checkbox-text {
+    color: #1B1B1B;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 4px; /* Adds spacing between checkbox and text */
 }
