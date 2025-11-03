@@ -452,27 +452,3 @@ body {
     /* Adds spacing between checkbox and text */
 }
 
-/* .cardholder-type-radio-buttons-div .child-div {
-	display: none;
-}
-
-.cardholder-type-radio-buttons-div input[value='child']:checked ~ .child-div {
-	display: block;
-} */
-
-/* .child-div {
-    display: none;
-}
-
-#child:checked ~ #child-div {
-    display: block;
-} */
-
-.content-div {
-  display: none; /* Hide all content divs by default */
-}
-
-#adult:checked ~ #divA,
-#child:checked ~ #divB {
-  display: block; /* Show the corresponding div when its radio button is checked */
-}
