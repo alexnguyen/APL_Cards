@@ -25,16 +25,16 @@
                     
                     <p class="form-subtitle">I need to...</p>
                     <!-- Radio Buttons -->
-                    <div class="radio-buttons-div">
+                    <div class="application-reason-radio-buttons-div">
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply">
+                        <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply" checked>
                         <label class="form-check-label" for="renewCard">
                             <span class="form-check-label-bolded">SIGN-UP</span> for a new library card
                         </label>
                     </div>
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
+                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew">
                         <label class="form-check-label" for="renewCard">
                             <span class="form-check-label-bolded">RENEW</span> my library card
                         </label>
@@ -42,21 +42,35 @@
                     </div>
 
                     <p class="form-subtitle">Who is this card for?</p>
-                    <div class="radio-buttons-div">
+                    <div class="cardholder-type-radio-buttons-div">
                         <div class="form-check">
-                        <input class="form-check-input" type="radio" name="applicationReason" id="applyNew" value="apply">
-                        <label class="form-check-label" for="renewCard">
+                        <!-- <input type="radio" id="adult" name="selection" value="adult"> -->
+                        <input class="form-check-input" type="radio" name="cardholderType" id="adult" value="adult">
+                        <label class="form-check-label" for="adult">
                             An adult (18 or older)
                         </label>
                     </div>
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
-                        <label class="form-check-label" for="renewCard">
+                        <!-- <input type="radio" id="child" name="selection" value="child"> -->
+                        <input class="form-check-input" type="radio" name="cardholderType" id="child" value="child">
+                        <label class="form-check-label" for="child">
                             A child (17 or younger)
                             <br>
                             <span class="form-check-label-comment">Residents and non-residents aged 17 and younger require an adult parent or guardian as a cosigner.</span>
                         </label>
+                    </div>
+
+                    <div id="divA" class="content-div">Content for Option A</div>
+                    <div id="divB" class="content-div">
+                        <p class="form-subtitle">Tell us a little about your child
+                    <br>
+                    
+                    <!-- Child's First Name -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">Child's First Name</label>
+                        <input type="text" class="form-control" id="childFirstName" name="childFirstName">
+                    </div>
                     </div>
                     </div>
 
@@ -75,7 +89,7 @@
                     </div>
                     
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew" checked>
+                        <input class="form-check-input" type="radio" name="applicationReason" id="renewCard" value="renew">
                         <label class="form-check-label" for="renewCard">
                             Digital Card
                             <br>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Public Library - Library Card Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="new-logo-styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <div class="library-banner">
+                <img src="new_library_logo.png" class="libary-logo" alt="libary logo">
+            </div>
+        <div class="form-container">          
+            <!-- Form Content -->
+            <div class="form-content">
+                <h2 class="form-title">Library Card Application</h2>
+                <p class="comment">Unsure if you live within Austin’s city limits? Call any Customer Service at <span class="comment-link">512-974-7475</span>.
+                    <br>
+                    <br>
+                    For more information on how library cards work, visit the <span class="comment-link">Library Card Policy page</span> </p>
+                <form>
+                    <p class="form-subtitle">I need to...</p>
+                        <div class="application-reason-radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option" id="applyNew" value="applicationtypediv1" onclick="toggleApplicationTypeDivs()">
+                        <label class="form-check-label" for="renewCard">
+                            <span class="form-check-label-bolded">SIGN-UP</span> for a new library card
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option" id="renewCard" value="applicationtypediv2" onclick="toggleApplicationTypeDivs()">
+                        <label class="form-check-label" for="renewCard">
+                            <span class="form-check-label-bolded">RENEW</span> my library card
+                        </label>
+                    </div>
+                    </div>
+
+                    <!-- Correct formatting for showing/hiding divs / Might not work for our purposes though -->
+                    <!-- <div class="form-check">
+                    <input class="form-check-input" type="radio" id="adult" name="selection" value="adult">
+                    <label for="optionA">An adult (18 or older)</label>
+                    <div id="divA" class="content-div">Content for Option A</div>
+                    </div>
+
+                    <input class="form-check-input" type="radio" id="child" name="selection" value="child">
+                    <label for="optionB"> A child (17 or younger)</label>
+                    <div id="divB" class="content-div"><p class="form-subtitle">Tell us a little about your child -->
+
+                    <div id="applicationtypediv1" style="display: none;">
+                    <p class="form-subtitle">Who is this card for?</p>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="option" id="radio1" value="typediv1" onclick="toggleTypeDivs()">
+                    <label class="form-check-label" for="radio1">An adult (18 or older)</label><br>
+                    </div>
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="option" id="radio2" value="typediv2" onclick="toggleTypeDivs()">
+                    <label class="form-check-label" for="radio2"> A child (17 or younger)
+                        <br>
+                        <span class="form-check-label-comment">Residents and non-residents aged 17 and younger require an adult parent or guardian as a cosigner.</span>
+                    </label><br>
+                    </div>
+
+                    <div id="typediv1" style="display: none;">
+                    <br>
+                    <p class="form-subtitle">Tell us a little about yourself
+                    <br>
+                    
+                    <!-- First Name -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+
+                    <!-- Preferred First Name -->
+                    <div class="mb-3">
+                        <label for="preferredFirstName" class="form-label">Preferred First Name <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="preferredFirstName" name="preferredFirstName">
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div class="mb-3">
+                        <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                        <br>
+                        <input type="date" class="form-control-half-width" id="dateOfBirth" name="dateOfBirth" readonly>
+                    </div>
+
+                    <p class="form-subtitle">Which ethnicity/race do you  most identify with? <span class="form-label-comment">(optional)</span></p>
+                    <p class="ethnicity-comment">Choose all that apply</p>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Asian</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Black</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Hawaiian/Pacific Islander</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Hispanic/Latino</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Native American/Alaskan Native</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">White</label>
+                    <br>
+                    </div>
+
+                    <div id="typediv2" style="display: none;">
+                    <p class="form-subtitle">Tell us a little about your child
+                        <br>
+                    
+                    <!-- Child's First Name -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">Child's First Name</label>
+                        <input type="text" class="form-control" id="childFirstName" name="childFirstName">
+                    </div>
+                    </div>
+                    </div>
+
+                    <div id="applicationtypediv2" style="display: none;">
+                    <form>
+                    
+                    <!-- Library Card Number -->
+                    <div class="mb-3">
+                        <label for="libraryCardNumber" class="form-label">Library Card Number</label>
+                        <input type="text" class="form-control" id="libraryCardNumber" name="libraryCardNumber">
+                    </div>
+                    
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                        <a href="#" class="forgot-password">I forgot my password</a>
+                    </div>
+                    </form>
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <button type="submit" class="btn btn-continue"><span class="btn-continue-text">Review</span></button>
+                    <button type="button" class="btn btn-cancel"><span class="btn-cancel-text">Cancel</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
