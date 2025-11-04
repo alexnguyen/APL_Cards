@@ -84,7 +84,7 @@
                         <input type="date" class="form-control-half-width" id="dateOfBirth" name="dateOfBirth" readonly>
                     </div>
 
-                    <p class="form-subtitle">Which ethnicity/race do you  most identify with? <span class="form-label-comment">(optional)</span></p>
+                    <p class="form-subtitle">Which ethnicity/race do you most identify with? <span class="form-label-comment">(optional)</span></p>
                     <p class="ethnicity-comment">Choose all that apply</p>
                     <input type="checkbox" id="myCheckbox" name="option1" value="value1">
                     <label for="myCheckbox" class="checkbox-text">Asian</label>
@@ -104,6 +104,172 @@
                     <input type="checkbox" id="myCheckbox" name="option1" value="value1">
                     <label for="myCheckbox" class="checkbox-text">White</label>
                     <br>
+                    <p class="form-subtitle">How can we contact you?
+                    <br>
+
+                    <!-- Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Email Address</label>
+                        <input type="text" class="form-control" id="emailAddress" name="emailAddress">
+                    </div>
+
+                    <!-- Confirm Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Confirm Email Address</label>
+                        <input type="text" class="form-control" id="confirmEmailAddress" name="confirmEmailAddress">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number <span class="form-label-comment">(optional)</span></label>
+                        <br>
+                        <input type="text" class="form-control-half-width" id="phoneNumber" name="phoneNumber">
+                    </div>
+
+                    <!-- Street Address -->
+                    <div class="mb-3">
+                        <label for="streetAddress" class="form-label">Street Address</label>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress">
+                    </div>
+
+                    <!-- Unit Number -->
+                    <div class="mb-3">
+                        <label for="unitNumber" class="form-label">Unit Number <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="unitNumber" name="unitNumber">
+                    </div>
+
+                    <!-- Address Fields -->
+                    <div class="mb-3">
+                        <div class="grid-form">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                        </div>
+                        <div class="grid-item">
+                        <label for="zipCode"class="form-label" >Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="zipCode">
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Radio Buttons -->
+                    <p class="form-subtitle">Is your current mailing address the same as your residence address?</p>
+                    <div class="radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option" id="radio1" value="mailingaddressdiv1" onclick="toggleMailingAddressDivs()">
+                        <label class="form-check-label" for="yes">
+                            Yes
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option" id="radio1" value="mailingaddressdiv2" onclick="toggleMailingAddressDivs()">
+                        <label class="form-check-label" for="no">
+                            No
+                        </label>
+                    </div>
+
+                    <div id="mailingaddressdiv2" style="display: none;">
+                    <!-- Mailing Street Address -->
+                    <div class="mb-3">
+                        <label for="streetAddress" class="form-label">Mailing Street Address</label>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress">
+                    </div>
+
+                    <!-- Mailing Unit Number -->
+                    <div class="mb-3">
+                        <label for="unitNumber" class="form-label">Unit Number <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="unitNumber" name="unitNumber">
+                    </div>
+
+                    <!-- Mailing Address Fields -->
+                    <div class="mb-3">
+                        <div class="grid-form">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                        </div>
+                        <div class="grid-item">
+                        <label for="zipCode"class="form-label" >Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="zipCode">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="mailingaddressdiv1" style="display: none;"></div>
+
+                    <p class="form-subtitle">In order to receive your new Library Card, you must present your photo ID and proof of residence address to any<span class="form-subtitle-link">Austin Public Library location</span>. </p>
+                    <h2 class="sub-header">Acceptable forms of ID and proof of residence documents</h2>
+                    <br>
+                    <p class="form-subtitle">What kind of ID do you have?</p>
+                    <!-- ID fields -->
+                    <div class="mb-3">
+                        <div class="grid-form-half">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">ID Type</label>
+                        <select  class="form-control-half-width" id="idType" name="idType">
+                            <option value="apple">Driver's License</option>
+                            <option value="banana">Passport</option>
+                        </select>
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">ID Number</label>
+                        <input type="text" class="form-control" id="idNumber" name="idNumber">
+                        </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <p class="form-subtitle">Let’s set up your library account</p>
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Create a Library Card Password</label>
+                        <p class="password-comment">Some digital resources call your password a PIN.</p>
+                        <input type="text" class="form-control-password" id="password" name="password">
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="text" class="form-control-password" id="confirmPassword" name="confirmPassword">
+                    </div>
+
+                    <br>
+                    <p class="form-subtitle">User Agreement </p>
+
+                    <div class="gray-border-box">
+                        <p class="user-agreement">I assume responsibility for all materials checked out on and all charges incurred by the use of this card. I understand that Library fees, including nonrefundable service charge, collection, Texshare, and ILL fees, are set by the Austin City Council and are subject to change. To minimize liability, I will inform the Library immediately of a change of address, email address or if the card becomes lost or stolen.</p>
+                    </div>
+                    
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">I agree with the terms and conditions</label>
+
+                    <br>
+                    <p class="form-subtitle">To receive my library card, I understand that I MUST visit any Austin Public Library location with:</p>
+
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">An acceptable form of ID</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Acceptable documents proving your residence</label>
+                    <br>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                        <label for="myCheckbox" class="checkbox-text">I would like to receive information about Library news and events and the
+                        Austin Public Library Friends Foundation.</label>
+                    </div>    
+                    </div>
                     </div>
 
                     <div id="typediv2" style="display: none;">
@@ -115,6 +281,250 @@
                         <label for="firstName" class="form-label">Child's First Name</label>
                         <input type="text" class="form-control" id="childFirstName" name="childFirstName">
                     </div>
+
+                    <!-- Child's Last Name -->
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Child's Last Name</label>
+                        <input type="text" class="form-control" id="childLastName" name="childLastName">
+                    </div>
+
+                    <!-- Child's Preferred First Name -->
+                    <div class="mb-3">
+                        <label for="preferredFirstName" class="form-label">Child's Preferred First Name <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="preferredFirstName" name="preferredFirstName">
+                    </div>
+
+                    <!-- Child's Date of Birth -->
+                    <div class="mb-3">
+                        <label for="dateOfBirth" class="form-label">Child's Date of Birth</label>
+                        <br>
+                        <input type="date" class="form-control-half-width" id="dateOfBirth" name="dateOfBirth" readonly>
+                    </div>
+
+                    <p class="form-subtitle">Which ethnicity/race does your child most identify with? <span class="form-label-comment">(optional)</span></p>
+                    <p class="ethnicity-comment">Choose all that apply</p>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Asian</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Black</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Hawaiian/Pacific Islander</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Hispanic/Latino</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Native American/Alaskan Native</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">White</label>
+                    <br>
+
+                    <br>
+                    <p class="form-subtitle">Tell us about you, the parent/guardian
+                    <br>
+                    
+                    <!-- Parent or Guardian's First Name -->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">Parent/Guardian’s First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+
+                    <!-- Parent or Guardian's Last Name -->
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Parent/Guardian’s Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+
+                    <!-- Parent or Guardian's First Name -->
+                    <div class="mb-3">
+                        <label for="preferredFirstName" class="form-label">Parent/Guardian's Preferred First Name <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="preferredFirstName" name="preferredFirstName">
+                    </div>
+
+                    <!-- Parent or Guardian's Date of Birth -->
+                    <div class="mb-3">
+                        <label for="dateOfBirth" class="form-label">Parent/Guardian's Date of Birth</label>
+                        <br>
+                        <input type="date" class="form-control-half-width" id="dateOfBirth" name="dateOfBirth" readonly>
+                    </div>
+
+                    <p class="form-subtitle">How can we contact you, the parent/guardian?
+                    <br>
+
+                    <!-- Parent or Guardian's Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Parent/Guardian's Email Address</label>
+                        <input type="text" class="form-control" id="emailAddress" name="emailAddress">
+                    </div>
+
+                    <!-- Parent or Guardian's Confirm Email Address -->
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Confirm Parent/Guardian's Email Address</label>
+                        <input type="text" class="form-control" id="confirmEmailAddress" name="confirmEmailAddress">
+                    </div>
+
+                    <!-- Parent or Guardian's Phone Number -->
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Parent/Guardian's Phone Number <span class="form-label-comment">(optional)</span></label>
+                        <br>
+                        <input type="text" class="form-control-half-width" id="phoneNumber" name="phoneNumber">
+                    </div>
+
+                    <!-- Parent or Guardian's Street Address -->
+                    <div class="mb-3">
+                        <label for="streetAddress" class="form-label">Street Address</label>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress">
+                    </div>
+
+                    <!-- Parent or Guardian's Unit Number -->
+                    <div class="mb-3">
+                        <label for="unitNumber" class="form-label">Unit Number <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="unitNumber" name="unitNumber">
+                    </div>
+
+                    <!-- Parent or Guardian's Address Fields -->
+                    <div class="mb-3">
+                        <div class="grid-form">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                        </div>
+                        <div class="grid-item">
+                        <label for="zipCode"class="form-label" >Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="zipCode">
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Radio Buttons -->
+                    <p class="form-subtitle">Is your current mailing address the same as your residence address?</p>
+                    <div class="radio-buttons-div">
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option" id="radio1" value="childmailingaddressdiv1" onclick="toggleChildMailingAddressDivs()">
+                        <label class="form-check-label" for="yes">
+                            Yes
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="option" id="radio1" value="childmailingaddressdiv2" onclick="toggleChildMailingAddressDivs()">
+                        <label class="form-check-label" for="no">
+                            No
+                        </label>
+                    </div>
+
+                    <div id="childmailingaddressdiv2" style="display: none;">
+                    <!-- Mailing Street Address -->
+                    <div class="mb-3">
+                        <label for="streetAddress" class="form-label">Mailing Street Address</label>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress">
+                    </div>
+
+                    <!-- Mailing Unit Number -->
+                    <div class="mb-3">
+                        <label for="unitNumber" class="form-label">Unit Number <span class="form-label-comment">(optional)</span></label>
+                        <input type="text" class="form-control" id="unitNumber" name="unitNumber">
+                    </div>
+
+                    <!-- Mailing Address Fields -->
+                    <div class="mb-3">
+                        <div class="grid-form">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                        </div>
+                        <div class="grid-item">
+                        <label for="zipCode"class="form-label" >Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="zipCode">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="childmailingaddressdiv1" style="display: none;"></div>
+
+                    <p class="form-subtitle">In order for your child to receive your new Library Card, you must present your photo ID and proof of residence address to any<span class="form-subtitle-link">Austin Public Library location</span>. </p>
+                    <h2 class="sub-header">Acceptable forms of ID and proof of residence documents</h2>
+                    <br>
+                    <p class="form-subtitle">What kind of ID do you, the parent/guardian, have?</p>
+                    <!-- ID fields -->
+                    <div class="mb-3">
+                        <div class="grid-form-half">
+                        <div class="grid-item">
+                        <label for="city" class="form-label">ID Type</label>
+                        <select  class="form-control-half-width" id="idType" name="idType">
+                            <option value="apple">Driver's License</option>
+                            <option value="banana">Passport</option>
+                        </select>
+                        </div>
+                        <div class="grid-item">
+                        <label for="state" class="form-label">ID Number</label>
+                        <input type="text" class="form-control" id="idNumber" name="idNumber">
+                        </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <p class="form-subtitle">Let’s set up your child's library account</p>
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Create a Library Card Password</label>
+                        <p class="password-comment">Some digital resources call your password a PIN.</p>
+                        <input type="text" class="form-control-password" id="password" name="password">
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="text" class="form-control-password" id="confirmPassword" name="confirmPassword">
+                    </div>
+
+                    <br>
+                    <p class="form-subtitle">User Agreement </p>
+
+                    <div class="gray-border-box">
+                        <p class="user-agreement">I assume responsibility for all materials checked out on and all charges incurred by the use of this card. I understand that Library fees, including nonrefundable service charge, collection, Texshare, and ILL fees, are set by the Austin City Council and are subject to change. To minimize liability, I will inform the Library immediately of a change of address, email address or if the card becomes lost or stolen.</p>
+                    </div>
+                    
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">I agree with the terms and conditions</label>
+
+                    <br>
+                    <p class="form-subtitle">To receive my child's library card, I understand that I MUST visit any Austin Public Library location with:</p>
+
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">An acceptable form of ID</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Acceptable documents proving your residence</label>
+                    <br>
+                    <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                    <label for="myCheckbox" class="checkbox-text">Your child must be present</label>
+                    <br>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                        <label for="myCheckbox" class="checkbox-text">I understand that in order to receive a library card for a child (17 or younger), an adult parent or guardian must cosign.</label>
+                    </div>  
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="myCheckbox" name="option1" value="value1">
+                        <label for="myCheckbox" class="checkbox-text">I would like to receive information about Library news and events and the
+                        Austin Public Library Friends Foundation.</label>
+                    </div>    
+                    </div>
+
                     </div>
                     </div>
 
