@@ -249,6 +249,38 @@ body {
     line-height: normal;
 }
 
+.btn-back {
+    background-color: transparent;
+    border: 1px solid #174a7a;
+    color: #174a7a;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: flex;
+    height: 44px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.btn-back-text {
+    color: #174a7a;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-back:hover {
+    background-color: #174a7a;
+    color: white;
+}
+
 .radio-buttons-div {
     margin-bottom: 15px;
 }
@@ -452,3 +484,55 @@ body {
     /* Adds spacing between checkbox and text */
 }
 
+.edit-section {
+    display: flex;
+    padding: 12px 8px;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
+.edit-section-header {
+    color: #1B1B1B;
+    font-family: 'Geist', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.2px;
+    background: url(Edit.svg) no-repeat scroll 330px 5px;
+}
+
+.edit-section-header::after {
+    content: "Edit";
+    color: #005EA2;
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+    position: absolute;
+    right: 525px;
+}
+
+.edit-category {
+    color: #000;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: -15px;
+}
+
+.edit-category-answer {
+    color: #00406F;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+}
