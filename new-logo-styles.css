@@ -281,6 +281,42 @@ body {
     color: white;
 }
 
+.btn-submit {
+    display: flex;
+    height: 44px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: #005EA2;
+    border-color: #005EA2;
+    color: #000000;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.btn-submit:hover {
+    background-color: #174a7a;
+    border-color: #174a7a;
+    color: white;
+}
+
+.btn-submit-text {
+    color: white;
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .radio-buttons-div {
     margin-bottom: 15px;
 }
@@ -535,4 +571,17 @@ body {
     font-style: italic;
     font-weight: 400;
     line-height: 150%;
+}
+
+.form-control-disabled {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #1b1b1b;
+    height: 40px;
+    width: 395px;
+    background-color: #C9C9C9;
 }
