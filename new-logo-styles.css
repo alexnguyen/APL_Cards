@@ -129,6 +129,15 @@ body {
     text-underline-position: from-font;
 }
 
+.comment-bold {
+    color: #1B1B1B;
+    font-family: 'Geist', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
 .form-label {
     color: #1B1B1B;
     font-family: 'Geist', sans-serif;
@@ -584,4 +593,89 @@ body {
     height: 40px;
     width: 395px;
     background-color: #C9C9C9;
+}
+
+.subheader {
+    color: #000;
+    font-family: 'Geist', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.checkmark {
+    margin-right: 10px;
+    height: 30px;
+}
+
+.numbered-list {
+    color: #005EA2;
+    font-family: 'Geist', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    margin-left: 10px;
+    margin-bottom: -5px;
+}
+
+.large-comment-link {
+    color: #005EA2;
+    text-align: center;
+    font-family: 'Geist', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    height: 10x;
+}
+
+.contact-info {
+    color: #4F6169;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.contact-info-phone {
+    color: #005EA2;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.contact-info-email {
+    color: #005EA2;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
